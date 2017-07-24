@@ -12,4 +12,4 @@ outputs:
 - name: reports
 
 run:
-  path: ls
+  path: scripts/report.sh
