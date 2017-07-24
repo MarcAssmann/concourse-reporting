@@ -1,0 +1,16 @@
+---
+resources:
+- name: scripts
+  type: git
+  source:
+    uri: https://github.com/MarcAssmann/concourse-reporting.git
+
+jobs:
+- name: job-pass-files
+  public: true
+  plan:
+  - get: resource-tutorial
+  - task: create-some-files
+    file: resource-tutorial/11_task_outputs_to_inputs/create_some_files.yml
+  - task: show-some-files
+    file: resource-tutorial/11_task_outputs_to_inputs/show_files.yml
