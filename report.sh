@@ -1,7 +1,5 @@
 #!/bin/bash
 
-ls -lahR
-
 curl -o fly http://192.168.100.4:8080/api/v1/cli?arch=amd64&platform=linux
 chmod +x fly
 
