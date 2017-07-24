@@ -11,12 +11,13 @@ jobs:
   plan:
   - get: scripts
   - task: reporting-task
-    platform: linux
-    image_resource:
-      type: docker-image
-      source: {repository: bobohund/buildtools}
-    inputs:
-      - name: scripts
-    run:
-      path: echo
-      args: [HELLO]
+    config:
+      platform: linux
+      image_resource:
+        type: docker-image
+        source: {repository: bobohund/buildtools}
+      inputs:
+        - name: scripts
+      run:
+        path: ./scripts/report.sh
+        args: [param2]
