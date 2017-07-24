@@ -18,5 +18,5 @@ jobs:
     inputs:
       - name: scripts
     run:
-      path: pwd
-    
+      path: echo
+      args: [HELLO]
