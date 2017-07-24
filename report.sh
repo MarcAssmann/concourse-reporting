@@ -1,6 +1,6 @@
 #!/bin/bash
 
-curl -o fly http://192.168.100.4:8080/api/v1/cli?arch=amd64&platform=linux
+curl -O fly http://192.168.100.4:8080/api/v1/cli?arch=amd64&platform=linux
 chmod +x fly
 
 fly -t lite login -c http://192.168.100.4:8080
