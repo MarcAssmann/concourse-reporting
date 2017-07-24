@@ -12,4 +12,4 @@ outputs:
 - name: reports
 
 run:
-  path: scripts/report.sh
+  path: pwd
