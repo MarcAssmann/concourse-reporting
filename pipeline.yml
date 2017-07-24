@@ -19,5 +19,5 @@ jobs:
       - name: scripts
     run:
       path: ls
-      args: [-lah]
+      args: [-lahR]
     
