@@ -12,4 +12,4 @@ outputs:
 - name: reports
 
 run:
-  path: "ls -lahR"
+  path: ls
